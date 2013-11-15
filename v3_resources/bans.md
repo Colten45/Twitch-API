@@ -2,7 +2,7 @@
 
 ***
 
-Stores and updates information about a [channels's][channels] block list.
+Stores and updates information about a [channels's][channels] ban list.
 
 | Endpoint | Description |
 | ---- | --------------- |
