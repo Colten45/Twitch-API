@@ -34,7 +34,7 @@ Returns a list of banned objects on `:channels`'s ban list. List sorted by recen
             <td><code>targets</code></td>
             <td>optional</td>
             <td>integer</td>
-            <td>Bans from a comma separated list of targets.</td>
+            <td>Returns the banned targets from a comma separated list of targets.</td>
         </tr>
         <tr>
             <td><code>limit</code></td>
@@ -95,7 +95,30 @@ curl -H 'Accept: application/vnd.twitchtv.v3+json' -H 'Authorization: OAuth <acc
 
 Adds `:target` to `:channel`'s ban list. `:channel` is the authenticated user/channel and `:target` is user to be banned. Returns a bans object.
 
+If optional parameter 'targets' is given, adds the comma separated list of targets to the ban list
+
 *__Authenticated__*, required scope: `channel_ban_edit`
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>targets</code></td>
+            <td>optional</td>
+            <td>integer</td>
+            <td>Bans from a comma separated list of targets.</td>
+        </tr>
+    </tbody>
+</table>
 
 ### Example Request
 
@@ -133,6 +156,31 @@ curl -H 'Accept: application/vnd.twitchtv.v3+json' -H 'Authorization: OAuth <acc
 Removes `:target` from `:channel`'s ban list. `:user` is the authenticated user/channel and `:target` is user to be unbanned.
 
 *__Authenticated__*, required scope: `channel_ban_edit`
+
+If optional parameter 'targets' is given, removes the comma separated list of targets from the ban list.
+
+*__Authenticated__*, required scope: `channel_ban_edit`
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>targets</code></td>
+            <td>optional</td>
+            <td>integer</td>
+            <td>Unbans from a comma separated list of targets.</td>
+        </tr>
+    </tbody>
+</table>
 
 ### Example Request
 
