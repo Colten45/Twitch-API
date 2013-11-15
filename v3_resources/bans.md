@@ -93,7 +93,7 @@ curl -H 'Accept: application/vnd.twitchtv.v3+json' -H 'Authorization: OAuth <acc
 
 ## `PUT /channels/:channel/bans/:target`
 
-Adds `:target` to `:channel`'s block list. `:channel` is the authenticated user/channel and `:target` is user to be banned. Returns a bans object.
+Adds `:target` to `:channel`'s ban list. `:channel` is the authenticated user/channel and `:target` is user to be banned. Returns a bans object.
 
 *__Authenticated__*, required scope: `channel_ban_edit`
 
